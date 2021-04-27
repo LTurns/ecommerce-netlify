@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="shopping">
+    <!-- <div class="shopping">
       <h2 :class="{ active: cartUIStatus === 'idle' && cartCount === 0 }">01</h2>
       <h4>Shopping Cart</h4>
     </div>
@@ -11,7 +11,7 @@
     <div class="order">
       <h2 :class="{ active: cartUIStatus === 'success' }">03</h2>
       <h4>Order Complete</h4>
-    </div>
+    </div> -->
   </section>
 </template>
 

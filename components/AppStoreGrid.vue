@@ -14,7 +14,7 @@
           :show-rating="false"
           style="margin: 5px 0"
         ></star-rating> -->
-        <!-- <h3>{{ item.name }}</h3> -->
+        <h3>{{ item.name }}</h3>
         <!-- <h4 class="price">{{ item.price | dollar }}</h4> -->
         <NuxtLink :to="`product/${item.id}`">
           <button class="multi-item">View Item ></button>

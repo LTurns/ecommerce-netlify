@@ -2,7 +2,7 @@
   <div>
     <app-cart-steps />
     <hr />
-    <h1 class="center">Your Cart</h1>
+    <!-- <h1 class="center">Your Cart</h1> -->
 
     <section v-if="cartUIStatus === 'idle'">
       <app-cart-display />
@@ -16,9 +16,9 @@
       <h2>Success!</h2>
       <p>Thank you for your purchase. You'll be receiving your items in 4 business days.</p>
       <p>Forgot something?</p>
-      <button class="pay-with-stripe">
+      <!-- <button class="pay-with-stripe">
         <nuxt-link exact to="/">Back to Home</nuxt-link>
-      </button>
+      </button> -->
     </section>
 
     <section v-else-if="cartUIStatus === 'failure'">

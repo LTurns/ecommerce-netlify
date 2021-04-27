@@ -15,7 +15,8 @@
       <slot name="collection">Cable Installation</slot>
     </div>
     <div class="details">
-      <slot name="details">open for business</slot>
+      <slot name="details">open for business</slot><br><br>
+       <a href="http://www.cbsproducts.com/wp-content/uploads/2021/03/CBS-Main-Product-Catalogue.pdf">Download Catalogue</a>
     </div>
   </div>
 </template>
@@ -39,7 +40,7 @@ export default {};
   }
   .sale {
     grid-area: 2 / 2 / 3 / 4;
-    font-size: 6.5vmin;
+    font-size: 7vmin;
     color: #d96528;
     font-family: "PT Serif", -apple-system, BlinkMacSystemFont, "Segoe UI",
       Roboto, "Helvetica Neue", Arial, sans-serif;

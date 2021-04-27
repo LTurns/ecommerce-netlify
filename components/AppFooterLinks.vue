@@ -3,6 +3,7 @@
     <ul>
       <li>About</li>
       <li>Company</li>
+      <li>Careers</li>
       <li>Locations</li>
       <li>Contact</li>
       <li>Hours</li>
@@ -14,8 +15,10 @@
       <li>LinkedIn</li>
     </ul>
     <ul>
-      <h4>Catalogue</h4>
       <a href="http://www.cbsproducts.com/wp-content/uploads/2021/03/CBS-Main-Product-Catalogue.pdf">Download Catalogue</a>
+      <li>sales@cbsproducts.com</li>
+      <li>+44 1572 723 665</li>
+ 
     </ul>
   </section>
 </template>
