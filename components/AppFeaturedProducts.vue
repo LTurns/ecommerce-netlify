@@ -5,9 +5,10 @@
     </h2>
     <div class="featureditems">
       <div class="item" v-for="product in featuredProducts" :key="product.id">
-        <img :src="`/products/${product.img}`" />
-        <h3>{{ product.name }}</h3>
-        <h4>{{ product.price | dollar }}</h4>
+        <!-- <img :src="`/products/${product.img}`" /> -->
+        <div class="img"> </div>
+        <!-- <h3>{{ product.name }}</h3> -->
+        <!-- <h4>{{ product.price | dollar }}</h4> -->
         <NuxtLink :to="`/product/${product.id}`">
           <button class="multi-item">View Item ></button>
         </NuxtLink>
@@ -38,7 +39,7 @@ section {
     border: 1px solid #eee2dc;
     box-shadow: 0 3px 10px 0px #eee;
     border-radius: 40px;
-    padding: 10px 20px 30px;
+    padding: 20px 20px 30px;
     min-height: 150px;
     justify-self: center;
     align-self: center;
@@ -77,6 +78,14 @@ h2 span:after {
   right: -1010px;
 }
 
+.img {
+  width: 250px;
+  height: 250px;
+  background-color: rgb(206, 197, 197);
+  border-radius: 40px;
+  margin-bottom: 10px;
+}
+
 @media screen and (max-width: 699px) {
   .featureditems {
     width: 83vw;
@@ -87,8 +96,9 @@ h2 span:after {
     }
   }
 
-  img {
-    width: initial;
+  .img {
+    width: 375px;
+    height: 375px;
   }
 }
 
@@ -102,10 +112,6 @@ h2 span:after {
     div {
       padding: 40px 50px;
     }
-  }
-
-  img {
-    width: 100%;
   }
 }
 </style>

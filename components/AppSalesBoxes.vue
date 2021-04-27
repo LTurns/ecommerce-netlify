@@ -1,10 +1,10 @@
 <template>
   <section class="boxes">
-    <div v-for="(box, i) in boxes" :key="box.heading" :class="`box${i}`">
+    <button v-for="(box, i) in boxes" :key="box.heading" :class="`box${i}`">
       <img :src="box.icon" alt="service icon" />
       <h4>{{ box.heading }}</h4>
       <p>{{ box.details }}</p>
-    </div>
+    </button>
   </section>
 </template>
 
@@ -15,18 +15,18 @@ export default {
       boxes: [
         {
           icon: "/icon-package.svg",
-          heading: "Free Shipping Globally",
-          details: "Delivery in 4 Days"
+          heading: "Service 3",
+          details: "Description 3"
         },
         {
           icon: "/icon-cal.svg",
-          heading: "24/7 Customer Service",
-          details: "Call us any time"
+          heading: "Service 1",
+          details: "Description 1"
         },
         {
           icon: "/icon-service.svg",
-          heading: "Easy Online Returns",
-          details: "Send Within 30 Days"
+          heading: "Service 2",
+          details: "Description 2"
         }
       ]
     };

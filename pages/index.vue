@@ -1,16 +1,13 @@
 <template>
-  <div>
+  <div name="img">
     <app-textlockup />
     <app-sales-boxes />
-    <app-textlockup>
-      <template v-slot:img>
+    <!-- <app-textlockup> -->
+      <!-- <template v-slot:img>
         <img src="/bag.jpg" alt="bag" />
-      </template>
-      <template v-slot:new>50%</template>
-      <template v-slot:sale>Storewide Sale</template>
-      <template v-slot:collection>Summer</template>
-      <template v-slot:details>All accessories</template>
-    </app-textlockup>
+      </template> -->
+      <!-- <template v-slot:sale>Featured Products</template> -->
+    <!-- </app-textlockup> -->
     <app-featured-products />
   </div>
 </template>
@@ -32,6 +29,10 @@ export default {
 <style>
 .test {
   margin: 3vh;
+}
+
+img {
+  background-image: '../static/background.jpg'
 }
 
 main {

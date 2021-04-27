@@ -62,8 +62,8 @@ button {
     Roboto, "Helvetica Neue", Arial, sans-serif;
   transition: 0.3s all ease;
   &:hover {
-    background: black;
-    border: 1px solid black;
+    background: rgb(245, 203, 19)!important;
+    border: 1px solid rgb(245, 203, 19);
     color: white;
   }
 }

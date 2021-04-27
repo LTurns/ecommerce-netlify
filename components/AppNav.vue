@@ -1,23 +1,23 @@
 <template>
   <header>
-    <h1>Skyline Ivy</h1>
+    <h1>CBS Products</h1>
     <nav>
       <ul>
         <li>
           <nuxt-link exact to="/">Home</nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/all">All</nuxt-link>
+          <nuxt-link to="/product-list">Products</nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/women">Women</nuxt-link>
+          <nuxt-link to="/women">About Us</nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/men">Men</nuxt-link>
+          <nuxt-link to="/men">Where to Buy</nuxt-link>
         </li>
         <li>
           <div class="carttotal" v-if="cartCount > 0">{{ cartCount }}</div>
-          <nuxt-link to="/cart">Cart</nuxt-link>
+          <nuxt-link to="/cart">Contact Us</nuxt-link>
         </li>
       </ul>
     </nav>
@@ -93,6 +93,7 @@ nav {
 @media screen and (max-width: 850px) {
   h1 {
     margin: 0;
+    font-size: 8vmin;
   }
   nav ul li {
     padding: 0 5px !important;

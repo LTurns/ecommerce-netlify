@@ -21,10 +21,10 @@
         </NuxtLink>
       </div>
     </transition-group>
-    <aside>
-      <h3>Special Sale</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam libero iusto nemo laboriosam perferendis voluptas ullam officiis, quibusdam quas quam eveniet est fugit delectus corporis incidunt nam esse suscipit itaque?</p>
-      <h3>Filter by Price:</h3>
+    <!-- <aside>
+      <h3>Special Sale</h3> -->
+      <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam libero iusto nemo laboriosam perferendis voluptas ullam officiis, quibusdam quas quam eveniet est fugit delectus corporis incidunt nam esse suscipit itaque?</p> -->
+      <!-- <h3>Filter by Price:</h3>
       <p style="margin-top: 5px">
         Max Price
         <strong>${{ pricerange }}</strong>
@@ -40,7 +40,7 @@
       />
       <span class="min">${{ min }}</span>
       <span class="max">${{ max }}</span>
-    </aside>
+    </aside> -->
   </div>
 </template>
 
@@ -93,16 +93,16 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 20px 0;
+  // margin: 20px 0;
 }
 
-aside {
-  height: 100%;
-  width: 100%;
-}
+// aside {
+//   height: 100%;
+//   width: 100%;
+// }
 
-.max {
-  display: inline-block;
-  float: right;
-}
+// .max {
+//   // display: inline-block;
+//   // float: right;
+// }
 </style>

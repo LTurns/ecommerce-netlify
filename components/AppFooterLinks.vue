@@ -14,8 +14,8 @@
       <li>LinkedIn</li>
     </ul>
     <ul>
-      <h4>Newsletter:</h4>
-      <input type="text" />
+      <h4>Catalogue</h4>
+      <a href="http://www.cbsproducts.com/wp-content/uploads/2021/03/CBS-Main-Product-Catalogue.pdf">Download Catalogue</a>
     </ul>
   </section>
 </template>

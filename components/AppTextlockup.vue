@@ -2,20 +2,20 @@
   <div class="textlockup">
     <div class="img">
       <slot name="img">
-        <img src="/shoe1.jpg" alt="shoe" />
+        <!-- <img src="/shoe1.jpg" alt="shoe" /> -->
       </slot>
     </div>
-    <div class="new">
+    <!-- <div class="new">
       <slot name="new">New</slot>
-    </div>
+    </div> -->
     <div class="sale">
-      <slot name="sale">Men Shoes</slot>
+      <slot name="sale">Leaders in advanced</slot>
     </div>
     <div class="collection">
-      <slot name="collection">Collection</slot>
+      <slot name="collection">Cable Installation</slot>
     </div>
     <div class="details">
-      <slot name="details">Street Style New Fashion</slot>
+      <slot name="details">open for business</slot>
     </div>
   </div>
 </template>

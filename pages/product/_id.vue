@@ -2,7 +2,8 @@
   <div>
     <section class="item-contain">
       <section class="img">
-        <img :src="`/products/${product.img}`" />
+        <div class="img"> </div>
+        <!-- <img :src="`/products/${product.img}`" /> -->
       </section>
       <section class="product-info">
         <h1>{{ product.name }}</h1>
@@ -13,10 +14,12 @@
           active-color="#000"
           style="margin: 5px 0"
         ></star-rating>
-        <h4 class="price">{{ product.price | dollar }}</h4>
+        <!-- <h4 class="price">{{ product.price | dollar }}</h4> -->
         <p>{{ product.description }}</p>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto velit dolores repudiandae animi quidem, eveniet quod dolor facilis dicta eligendi ullam error. Assumenda in fugiat natus enim similique nam itaque.</p>
-        <div class="product-options">
+        <button>Enquire Now</button>
+        <p> Or call our Sales Team on 01234 567 890 </p>
+        <!-- <div class="product-options">
           <div class="quantity">
             <button class="update-num" @click="quantity > 0 ? quantity-- : quantity = 0">-</button>
             <input type="number" v-model="quantity" />
@@ -27,9 +30,9 @@
               <option :value="null" disabled hidden>Size</option>
               <option v-for="(size, key) in product.sizes" :key="key" :value="size">{{ size }}</option>
             </select>
-          </div>
-        </div>
-        <p v-if="showSizeRequiredMessage" class="size-required-message">Please choose a size</p>
+          </div> -->
+        <!-- </div> -->
+        <!-- <p v-if="showSizeRequiredMessage" class="size-required-message">Please choose a size</p>
         <p>
           Available in additional colors:
           <strong>
@@ -38,7 +41,7 @@
         </p>
         <p>
           <button class="button purchase" @click="cartAdd">Add to Cart</button>
-        </p>
+        </p> -->
       </section>
     </section>
     <hr />
@@ -155,10 +158,14 @@ select {
   color: red;
 }
 
-@media screen and (max-width: 650px) {
-  .img img {
-    width: 100%;
+.img {
+  margin-top: 20px;
+    background-color: rgb(224, 218, 218);
+    width: 200px;
+    height: 250px;
   }
+
+@media screen and (max-width: 650px) {
 
   .item-contain {
     margin-left: 0 !important;
