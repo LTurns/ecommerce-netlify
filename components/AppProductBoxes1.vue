@@ -1,11 +1,11 @@
 <template>
   <section class="boxes">
     <button v-for="(box, i) in boxes" :key="box.heading" :class="`box${i}`">
-      <nuxt-link class="link" exact to="/product-list">
+      <nuxt-link class="link" exact to="/all">
       <img :src="box.icon" alt="service icon" />
-       <h4>{{ box.heading }}</h4>
+      <h4>{{ box.heading }}</h4>
       <p>{{ box.details }}</p>
-        </nuxt-link>
+       </nuxt-link>
     </button>
   </section>
 </template>
@@ -17,17 +17,17 @@ export default {
       boxes: [
         {
           icon: "/icon-package.svg",
-          heading: "Service 3",
+          heading: "Cable Blowing Equipment",
           details: "Description 3"
         },
         {
           icon: "/icon-cal.svg",
-          heading: "Service 1",
+          heading: "Duct Rods",
           details: "Description 1"
         },
         {
           icon: "/icon-service.svg",
-          heading: "Service 2",
+          heading: "Drum Handling",
           details: "Description 2"
         }
       ]
@@ -38,7 +38,7 @@ export default {
 
 <style lang="scss" scoped>
 .boxes {
-  margin: 70px 0;
+  margin-top: 70px 0px;
   div {
     border: 1px solid #ddd;
     min-height: 150px;
@@ -52,12 +52,16 @@ export default {
   .box2 {
     grid-area: 1 / 2 / 2 / 3;
   }
-  .box3 {
+  .box0 {
     grid-area: 1 / 3 / 2 / 4;
   }
   .link {
     color: black;
   }
+}
+
+.section {
+  margin: 10px;
 }
 
 h4 {
@@ -81,12 +85,28 @@ h4 {
 
 @media screen and (max-width: 699px) {
   .boxes {
-    width: 83vw;
-    margin-left: 5vw;
+    margin-top: 70px;
+    margin-left: 8vw;
+    font-size: 16px;
+    
     div {
       padding: 10px 20px;
       margin-bottom: 10px;
     }
+  }
+
+  .box1 {
+    grid-area: 1 / 1 / 2 / 2;
+    width: 373px;
+  }
+  .box2 {
+    grid-area: 1 / 2 / 2 / 3;
+    width: 373px;
+  }
+  .box0 {
+    grid-area: 1 / 3 / 2 / 4;
+    width: 373px;
+
   }
 }
 </style>

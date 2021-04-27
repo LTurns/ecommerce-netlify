@@ -1,41 +1,22 @@
 <template>
   <div>
-    <app-sales-boxes :data="boxes" />
-    <app-sales-boxes :data="boxes" />
+    <app-product-boxes-1 />
+    <app-product-boxes-2 />
   </div>
 </template>
 
 <script>
 import { mapState } from "vuex";
-import AppSalesBoxes from "~/components/AppSalesBoxes.vue";
+import AppProductBoxes1 from "~/components/AppProductBoxes1.vue";
+import AppProductBoxes2 from "~/components/AppProductBoxes2.vue";
 
 export default {
   components: {
-    AppSalesBoxes
+    AppProductBoxes1,
+    AppProductBoxes2
   },
   computed: {
     ...mapState(["storedata"])
-  },
-  data() {
-    return {
-      newBoxes: [
-        {
-          icon: "/icon-package.svg",
-          heading: "Product 3",
-          details: "Description 3"
-        },
-        {
-          icon: "/icon-cal.svg",
-          heading: "Product 1",
-          details: "Description 1"
-        },
-        {
-          icon: "/icon-service.svg",
-          heading: "Product 2",
-          details: "Description 2"
-        }
-      ]
-    };
   }
 };
 </script>

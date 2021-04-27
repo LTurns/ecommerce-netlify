@@ -10,10 +10,10 @@
           <nuxt-link to="/product-list">Products</nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/women">About Us</nuxt-link>
+          <nuxt-link to="/about">About Us</nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/men">Where to Buy</nuxt-link>
+          <nuxt-link to="/wheretobuy">Where to Buy</nuxt-link>
         </li>
         <li>
           <div class="carttotal" v-if="cartCount > 0">{{ cartCount }}</div>
@@ -21,7 +21,7 @@
         </li>
       </ul>
     </nav>
-  </header>
+    </header>
 </template>
 
 <script>

@@ -1,29 +1,11 @@
 <template>
   <div class="storegrid">
-    <transition-group name="items" tag="section" class="content">
-      <div v-for="item in filteredprice" :key="item.id" class="item">
-        <div class="img-contain">
-          <NuxtLink :to="`product/${item.id}`">
-            <div class="img"></div>
-          </NuxtLink>
-        </div>
-        <!-- <star-rating
-          :rating="item.starrating"
-          active-color="#000"
-          :star-size="15"
-          :show-rating="false"
-          style="margin: 5px 0"
-        ></star-rating> -->
-        <!-- <h3>{{ item.name }}</h3> -->
-        <!-- <h4 class="price">{{ item.price | dollar }}</h4> -->
-        <NuxtLink :to="`product/${item.id}`">
-          <button class="multi-item">View Item ></button>
-        </NuxtLink>
-      </div>
-    </transition-group>
+   <div class="content"></div>
     <aside>
       <h3>Sales Team Information</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam libero iusto nemo laboriosam perferendis voluptas ullam officiis, quibusdam quas quam eveniet est fugit delectus corporis incidunt nam esse suscipit itaque?</p>
+      <app-sales-boxes />
+     
       <!-- <h3>Filter by Price:</h3>
       <p style="margin-top: 5px">
         Max Price
@@ -46,8 +28,13 @@
 
 <script>
 import StarRating from "vue-star-rating/src/star-rating.vue";
+import AppSalesBoxes from '../components/AppSalesBoxes';
+import AppSalesBoxes from '../components/AppSalesBoxes.vue';
 
 export default {
+ components: {
+  AppSalesBoxes
+ }
   props: {
     data: {
       required: true
@@ -69,7 +56,8 @@ export default {
     StarRating
   }
 };
-</script>
+</scr
+    AppSalesBoxesipt>
 
 <style lang="scss" scoped>
 .content {
@@ -77,6 +65,12 @@ export default {
   width: 100%;
   margin-bottom: 10px;
   padding: 20px;
+}
+
+.content {
+ width: 700px;
+ background-image: url('../static/googlemap.jpg');
+ background-size: 100%;
 }
 
 .img {
